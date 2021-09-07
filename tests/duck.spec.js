@@ -9,10 +9,5 @@ test('basic test', async ({ page }) => {
 test('duck go checking logo', async ({ page }) => {
   await page.goto('https://duckduckgo.com/');
   const logo = page.locator('#logo_homepage_link');
-  //await expect(logo.isVisible()).toBe();
-  await expect(logo).toBeVisible(true);
-
-
-
-
+  await expect(logo).toBeVisible();
 });
